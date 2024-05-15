@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let mySet = new Set();
+
+      mySet.add(1); // Menambahkan nilai 1 ke Set
+      mySet.add(2); // Menambahkan nilai 2 ke Set
+      mySet.add(3); // Menambahkan nilai 3 ke Set
+
+      console.log(mySet.has(1)); // Output: true
+
+      mySet.delete(1); // Menghapus nilai 1 dari Set
+
+      console.log(mySet.has(1)); // Output: false
+      console.log(mySet.size); // Output: 2
+
+      mySet.clear(); //Menghapus semua nilai dalam Set
+      console.log(mySet.size); //Output: O
+
+      let Array1 = [1, 7, 6, 2, 9, 4, 1];
+      let Array2 = [...new Set(Array1)];
+      console.log(Array2);
+    </script>
+  </body>
+</html>
