@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let score = 85;
+      let result;
+
+      if (score >= 90) {
+        result = "Selamat! Anda mendapatkan nilai A.";
+      } else if (score >= 80) {
+        result = "Anda mendapatkan nilai B.";
+      } else if (score >= 70) {
+        result = "Anda mendapatkan nilai C.";
+      } else if (score >= 60) {
+        result = "Anda mendapatkan nilai D.";
+      } else {
+        result = "Anda mendapatkan nilai E.";
+      }
+
+      console.log(result);
+
+      document.body.innerHTML = `<p>${result}</p>`;
+    </script>
+  </body>
+</html>

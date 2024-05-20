@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p id="demo"></p>
+
+    <script>
+      function salam() {
+        let pesan = "Halo, ";
+        function tambahNama(nama) {
+          return pesan + nama;
+        }
+        return tambahNama;
+      }
+
+      let nama = salam();
+      let teks = nama("Zakaria");
+
+      document.getElementById("demo").innerHTML = teks;
+    </script>
+  </body>
+</html>

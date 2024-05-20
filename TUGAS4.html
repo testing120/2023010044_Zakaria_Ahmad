@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+
+let biayaPerSKS = 125000;
+
+function hitungTotalBiaya(jumlahSKS) {
+    return jumlahSKS * biayaPerSKS;
+}
+
+let jumlahSKS = 20;
+let totalBiaya = hitungTotalBiaya(jumlahSKS);
+
+document.getElementById("demo").innerHTML = 'Total biaya pembayaran kuliah untuk ' + jumlahSKS + ' SKS adalah Rp' + totalBiaya;
+</script>
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p id="demo"></p>
+
+    <script>
+      function sapa(nama, umur = 20) {
+        return "Halo, " + nama + "! Anda berumur " + umur + " tahun.";
+      }
+
+      let teks1 = sapa("Ghani", 19);
+      let teks2 = sapa("Tayo");
+
+      document.getElementById("demo").innerHTML = teks1 + "<br>" + teks2;
+    </script>
+  </body>
+</html>

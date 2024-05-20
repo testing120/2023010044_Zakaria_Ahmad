@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p id="demo"></p>
+
+    <script>
+      let teks = "";
+      let arr = [10, 20, 30, 40];
+
+      for (let index in arr) {
+        teks += "<br>Indeks: " + index + ", Nilai: " + arr[index];
+      }
+
+      document.getElementById("demo").innerHTML = teks;
+    </script>
+  </body>
+</html>

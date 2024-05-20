@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p id="demo"></p>
+
+    <script>
+      function jumlahkan(...angka) {
+        let total = 0;
+        for (let i of angka) {
+          total += i;
+        }
+        return total;
+      }
+
+      let teks =
+        "Jumlah dari 1, 2, 3, 4, 5 adalah: " + jumlahkan(1, 2, 3, 4, 5);
+
+      document.getElementById("demo").innerHTML = teks;
+    </script>
+  </body>
+</html>

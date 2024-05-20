@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p id="demo"></p>
+
+    <script>
+      let teks = "";
+      let idx = 0;
+
+      loop: for (idx; idx < 10; idx++) {
+        if (idx === 5) {
+          continue loop;
+        }
+        teks += "<br>Angka " + idx;
+      }
+
+      document.getElementById("demo").innerHTML = teks;
+    </script>
+  </body>
+</html>

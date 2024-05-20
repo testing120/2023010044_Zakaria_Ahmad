@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function evaluasiNilai(nilai) {
+        let predikat;
+
+        if (nilai >= 90) {
+          predikat = "A";
+        } else if (nilai >= 80) {
+          predikat = "B";
+        } else if (nilai >= 70) {
+          predikat = "C";
+        } else if (nilai >= 60) {
+          predikat = "D";
+        } else {
+          predikat = "E";
+        }
+
+        let keterangan;
+
+        switch (predikat) {
+          case "A":
+            keterangan = "Sangat Baik";
+            break;
+          case "B":
+            keterangan = "Baik";
+            break;
+          case "C":
+            keterangan = "Cukup";
+            break;
+          case "D":
+            keterangan = "Kurang";
+            break;
+          default:
+            keterangan = "Sangat Kurang";
+            break;
+        }
+
+        return `Nilai: ${nilai}, Predikat: ${predikat}, Keterangan: ${keterangan}`;
+      }
+
+      console.log(evaluasiNilai(85)); 
+      console.log(evaluasiNilai(70)); 
+      console.log(evaluasiNilai(55)); 
+    </script>
+  </body>
+</html>

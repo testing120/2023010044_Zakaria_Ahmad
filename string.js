@@ -1,1 +1,2 @@
-console.log(5 + "foo");
+var x = "Hello World!";
+console.log(x + " Tipe data: " + typeof x);
